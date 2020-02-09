@@ -1,0 +1,30 @@
+Local variables
+  ตัวเเปรที่ถูกประกาศไว้อยู่ภายใน block ภายในตัว func รวมถึงตัวเเปรพารามิเตอร์ของ func จะเป็นตัวเเปร local ซึ่งสามารถถูกใช้งานได้เเค่ใน func ที่ประกาศไว้เเล้ว
+
+Global variables
+  ตัวเเปรที่ถูกประกาศไว้นอก func ซึ่งสามารถถูกเข้าถึงได้จาก func ต่างๆรวมถึง func main ได้
+  หากตัวเเปร local มีชื่อซ้ำกับตัวเเปร global เเล้ว การเเก้ไขค่าในตัวเเปร local จะไม่ได้มีผลกระทบกับค่าของตัวเเปล global
+
+Storage classes
+  มี 4 ประเภท auto,register,exterm เเละ static 
+    สามารถเเบ่งออกเป็น 2 storage duration คือ
+    -automatic storage duration
+    -static storage duration
+ auto เเละ register ใช้กำหนดตัวเเปรที่เป็น automatic storage duration คือ ตัวเเปรพวกนี้จะถูกกำหนดขึ้นมาใน memory 
+ extern เเละ static ใช้กำหนดตัวเเปรที่เป็น static storage duration ซึ่งคือ ตัวเเปรเหล่านี้จะถูกกำหนดใน memory ตั้งเเต่โปรเเกมเริ่มทำงาน จนกว่าโปรเเกรมจะสิ้นสุดการทำงาน
+   ตัวเเปร global เเละชื่อ func ถูกกำหนดให้เป็น extern โดย default
+
+Dynamic storage duration
+   พื่นที่เก็บข้อมูล (ตัวเเปร?) สำหรับ dynamic storage duration สามารถถูก allocate ขึ้นมาได้ตามความต้องการโปรเเกรมขณะที่โปรเเกรมกำลังทำงานอยู่
+
+Separate complition
+   ส่วนของการนิยาม func เเละการเรียกใช้ไม่จำเป็นต้อง complile ในเวลาเดียวกัน เเละสามารถเเยกอยู่กันคนละไฟล์ได้ รวมถึงตัวเเปร global เเละการเข้าถึงค่าตัวเเปรนั้นด้วย
+
+การใช้ make
+  ไฟล์ makefile จะบรรจุกฎต่างๆ ที่ใช้ในการสร้าง อาทิ object file หรือ executable file 
+  การสร้างกฏ 
+	target : dependency
+	-->tab-->คำสั่งที่ใช้ในการสร้าง target
+
+
+
