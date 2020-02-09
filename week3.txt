@@ -1,0 +1,47 @@
+If-Else
+if (expression)
+   statement1
+else 
+   statement2
+------------------
+Else-If
+if (expression1)
+   statement1
+else if (expression2)
+   statement2
+else if (expression3)
+   statement3
+.
+.
+.
+.
+.
+.
+.
+else 
+   statement(n)
+จะไล่การทำงานถ้า exp ไหนเป็นจริงก็จะเข้า block statement นั้น เเต่ถ้าไม่เข้าเงื่อนไข exp ก็จะเด้งไปทำในเงื่อนไข exp ต่อไป
+------------------
+Switch
+ใช้ในการตรวจสอบเงื่อนไขที่เรากำหนด
+switch (expression){
+   case (เงื่อนไขที่เราตรวจสอบ)
+	statements
+	break
+   case (เงื่อนไขที่เราตรวจสอบ)
+	statements
+	break
+   default:
+	statements
+	break
+}
+ในการตรวจสอบเงื่อนไข ถ้าเงื่อนไขนั้นตรงกับกรณี case ที่เรากำหนดหนด มันจะเด้งเข้าไปทำ statement นั้นได้เลยโดยไม่ต้องไล่ทำจากบนลงล่าง เเบบ else-if
+เเต่ถ้าเงื่อนไขไม่ตรงกับ case ไหนเลย ก็จะเด้งไปทำใน block ของ default ทันที 
+ข้อดีอีกอย่างของ switch case คือในการทำเเต่ละเงื่อนไข มันจะหยุดให้
+-------------------
+Do-While
+do-while นั้นจะต่างจาก while เเละ for loop โดยก่อนจะเข้าทำลูป do-while จะทำเงื่อนไข do ก่อนเเล้วจึงไปทำเงื่อนไข while
+
+do{
+   statement
+}while (expression);
