@@ -1,0 +1,30 @@
+การจะสร้างโฟล์เดอร์ -> mkdir --ชื่อไฟล์--
+โยงไฟล์โดยการ  -> cd --ชื่อโฟล์เดอร์ D/....--
+เช็ค version git โดยการ -> git --version
+ทำ master โดยการ -> git init
+เเอดไฟล์เข้าไปใน git โดยการ -> gitn add --ชื่อไฟล์.นามสกุล--
+เช็คสถานะของไฟล์ โดยการ -> git status
+git config user.name --your name--
+git config user.email --your email--
+เช็คชื่อเครื่องโดยการ -> git config user.name
+เช็คอีเมลล์เครื่องโดยการ -> git config user.email
+--cuation--
+ถ้าเป็นเครื่องส่วนตัว
+git config --global user.name "Your Name"
+git config --global user.email "yourmail@ku.th"
+
+--------------------
+
+git commit -m "--ชื่องาน--"
+
+เช็คไฟล์ทั้งหมดด้วย git log adog
+git log --all --decorate --oneline --graph
+
+--------------------
+
+
+เชื่อมงานกับ github
+git remote add <ชื่อ remote เช่น origin> <git url>
+
+อัพไฟล์ขึ้น github
+git push -u origin master
