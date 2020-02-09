@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    //int x=100 ; //ฐาน 10
+    //int a =0144 ; //ฐาน 8
+    //int b = 0x64 ; //ฐาน 16
+    //printf("x = %d\n", x) ;
+    //printf("reference of x = %lu\n", &x) ; // เป็นตัวเก็บค่า address ของค่าที่เก็บไว้ //ฐาน 10
+    //printf("reference of x = %p\n", &x) ; // %p ปริ้นค่ามากๆอยู่ในฐาน 16             //เขียนได้เเค่ ฐาน 8 10 16
+
+    //int number[] = {7,8,9,10,11} ; //aray ขนาด 5 *กำหนดตัวเเปล*
+    //int number[100] = {7,8,9,10,11} ;
+    //int number[5] ;
+    //int number[5000] = 200 ;
+    //printf("index 3 = %d\n", number[3]) ;
+    //printf("reference index 3 = %p\n", &number[3]) ; // pointer บวก 3 เท่าเข้าไป
+    //printf("index 0 = %d\n", number[0]) ;
+    //printf("reference index 0 = %p\n", &number[0]) ; //ถ้าต้องการเข้าถึง address โดยระบุเเค่ตัวเเปร มันจะดึง address index ที่ 0 ออกมา
+                                                // number คือ pointer มันจะคูณเท่ากับขนาดของตัวเเปรมัน ถ้าเรารู้ตำเเหน่ง index 0 ได้เราสามารถเข้าถึงได้ทุก index
+    //printf("reference index 0 = %p\n", &number+3) ;
+
+    //int *ptr = &x ; //pointer เก็บค่า address ประกาศ ต้องมี * เสมอ ///////////เเต่ตอนกำหนดค่าให้ไปชี้ไม่ต้องมี---ห้ามมมมมม!!!!!------(((  *  ))) 
+    //int *arrPtr ;
+    //arrPtr = number ; //&number[0] 
+    //arrPtr = arrPtr + 1 ;
+    //*arrPtr = *arrPtr + 1 ;
+    //*dereferencing
+    //printf("arrPtr = %p, *arrPtr = %d\n", arrPtr,*arrPtr) ;
+    //printf("number[1] = %p, number[1] = %d\n", &number[1],number[1]) ;
+
+    //----------------สิ่งที่ทำไม่ได้---------------------//
+
+    //&x = 50 ; //เราไม่สามารถเปลี่ยน address ของ memory ไม่ได้
+    //ptr = x ; //ต้องใส่ &
+    //*ptr = 50 ;
+
+    //int number[] = {7,8,9,10,11} ;
+    //char input[50] ; //เลื่อตัวเเรกไปถึง \0 ประกาศ 50 เก็บ 49 อีก 1 ตัวเอาไว้เก็บ \0
+    //for (int *ptr = number; ptr <= &number[4]; ptr++)
+    //{
+//        printf("[%p] = %d\n", ptr, *ptr) ;
+    //}
+    //char input[50];
+    //int count = 0 ;
+    //char c;
+    //while ((c = getchar() != '\n'))
+    //{
+    //    input[count] = c;
+    //    ++count ;
+    //}
+    //input[count] = '\0' ;
+    //printf("input = %s\n", input) ; //%s ปริ้นตั้งเเต่ตัวเเรกจนถึงตัว index ที่ \0
+    //for (char *cPtr = input; *cPtr != '\0'; cPtr++)
+    //{
+    //    printf("%c\n", *cPtr) ;
+    //}
+
+    //------------scanf--------------//
+
+    int a;
+    char c;
+    char s[50] ; 
+    scanf("%s-%d-%s", &c, &a, s) ; //ใส่ & everwhere เวิร์คสุด
+    printf("%s  %d  %s", c, a, s) ;
+    
+
+
+    
+
+} 
