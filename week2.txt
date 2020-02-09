@@ -1,0 +1,30 @@
+#include <stdio.h>
+#define for 20 // ประกาสค่าคงที่ เเทนที่ด้วย 20
+int main()
+{
+    int a = 10; //-2100000000-2100000000 เก็บ byte เเค่ครึ่งเดียว
+    long b = 4000000000; // เก็บได้ 4 byte เเบบ int จึงทำให้เกิด overflow
+    unsigned int c = 4000000000;
+    unsigned long long int d = 40000000000 ; 
+    printf("%llu", b );
+
+    float e = 10.22;
+    double f = 111.112;
+
+    char g = 'a';
+    char name[] = "mind"; //ประกาศ array
+
+    printf("%f %lf %e %s",e,f,g,name);
+
+    int h;
+    printf("%d", h);
+
+ //   char i = '' ; //เกิด syntax error เพราะ charactor เก็บค่าข้างในเป็น int
+
+    printf("--%d--", for);
+
+}
+
+---------------------------------
+%o ใช้ print เลขฐาน 8
+%x ใช้ print เลขฐาน 16
